@@ -1,0 +1,155 @@
+:root {
+  --bg-color: #0a1816;
+  --primary-color: #7562e0;
+  --text-color: #ffffff;
+  --dot-color: #f1875e;
+
+  --text-size-pimary-lg: 30px;
+  --text-size-pimary-sm: 20px;
+}
+* {
+  font-family: "Poppins";
+  box-sizing: border-box;
+}
+html{
+  font-size: 10px;
+}
+body {
+  margin: 0;
+  height: 100vh;
+  padding: 0 ;
+  background-color: var(--bg-color);
+}
+.main{
+  padding: 0 5rem;
+}
+.header {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .logo {
+  font-weight: bolder;
+  font-size: 4rem;
+  color: var(--primary-color);
+}
+.header .logo span {
+  font-size: 40px;
+  color: var(--dot-color);
+}
+.header .navbar ul li {
+  list-style: none; 
+  margin-right: 10px;
+  font-weight: 600;
+  font-size: 2rem;
+  background: linear-gradient(90.79deg, #7562e0 8.3%, #ffffff 86.57%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.header .navbar ul {
+  display: flex;
+  padding: 0;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  height: calc(100vh - 100px);
+  width: 100%;
+}
+.container .star {
+  left: 67%;
+  top:  77%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+.container > span {
+  display: none;
+  color: #0a1816;
+  text-shadow: 0 0 13px #0a1816, 0 0 17px #7562e05d;
+  font-size: 20rem;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+.container .center_box {
+  height: 90%;
+  width: 400px;
+  left: 50%;
+  transform: translate(-50%,0);
+  position: absolute;
+  background: url(./person.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.container .left_box {
+  display: flex;
+  z-index: 1;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+}
+.container .left_box h1 {
+  font-size:7rem;
+  z-index: 1;
+}
+.container .left_box .btn {
+  width: 265px;
+  height: 66px;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 2px;
+  border-radius: 30px;
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+.container .left_box h1 {
+  background: linear-gradient(90.79deg, #7562e0 8.3%, #ffffff50 86.57%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container .right_box{
+  z-index: 1;
+  max-width: 30%;
+}
+.container .right_box p{
+  font-size: var(--text-size-pimary-sm);
+}
+.container .right_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: #fff;
+}
+.container .right_box ul {
+  display: flex;
+  margin: 0;  
+  padding: 0;
+  align-items: center;
+  gap: 0 10px;
+  justify-content: flex-end;
+}
+.container .right_box ul li {
+  list-style: none;
+}
+.container .right_box ul li div {
+  background-position: center;
+  background-repeat: no-repeat  ;
+  background-size: 20px;
+  background-image: url(./instagram-svgrepo-com.svg);
+  background-color: #ffffff;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+}
+
+
+@media only screen and min-width() {
+  
+}
